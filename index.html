@@ -1,0 +1,902 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Título 1 Char";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Título 2 Char";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Título 3 Char";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Título 4 Char";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-link:"Título 5 Char";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Título 6 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Título 7 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Título 8 Char";
+	margin:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#272727;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Título 9 Char";
+	margin:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#272727;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Título Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Título Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Título Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Título Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtítulo Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Citação Char";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#404040;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Citação Intensa Char";
+	margin-top:18.0pt;
+	margin-right:43.2pt;
+	margin-bottom:18.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#0F4761;
+	font-style:italic;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#0F4761;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.Ttulo1Char
+	{mso-style-name:"Título 1 Char";
+	mso-style-link:"Título 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.Ttulo2Char
+	{mso-style-name:"Título 2 Char";
+	mso-style-link:"Título 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.Ttulo3Char
+	{mso-style-name:"Título 3 Char";
+	mso-style-link:"Título 3";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;}
+span.Ttulo4Char
+	{mso-style-name:"Título 4 Char";
+	mso-style-link:"Título 4";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;
+	font-style:italic;}
+span.Ttulo5Char
+	{mso-style-name:"Título 5 Char";
+	mso-style-link:"Título 5";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;}
+span.Ttulo6Char
+	{mso-style-name:"Título 6 Char";
+	mso-style-link:"Título 6";
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	font-style:italic;}
+span.Ttulo7Char
+	{mso-style-name:"Título 7 Char";
+	mso-style-link:"Título 7";
+	font-family:"Times New Roman",serif;
+	color:#595959;}
+span.Ttulo8Char
+	{mso-style-name:"Título 8 Char";
+	mso-style-link:"Título 8";
+	font-family:"Times New Roman",serif;
+	color:#272727;
+	font-style:italic;}
+span.Ttulo9Char
+	{mso-style-name:"Título 9 Char";
+	mso-style-link:"Título 9";
+	font-family:"Times New Roman",serif;
+	color:#272727;}
+span.TtuloChar
+	{mso-style-name:"Título Char";
+	mso-style-link:Título;
+	font-family:"Aptos Display",sans-serif;
+	letter-spacing:-.5pt;}
+span.SubttuloChar
+	{mso-style-name:"Subtítulo Char";
+	mso-style-link:Subtítulo;
+	font-family:"Times New Roman",serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+span.CitaoChar
+	{mso-style-name:"Citação Char";
+	mso-style-link:Citação;
+	color:#404040;
+	font-style:italic;}
+span.CitaoIntensaChar
+	{mso-style-name:"Citação Intensa Char";
+	mso-style-link:"Citação Intensa";
+	color:#0F4761;
+	font-style:italic;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=PT-BR style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
+
+<p class=MsoNormal>&lt;html lang=&quot;pt-br&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;head&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;title&gt;Conecta.ti Proposta Pro&lt;/title&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;style&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; * {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-sizing: border-box;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -webkit-tap-highlight-color:
+transparent;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; body {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color:
+#f0f2f5;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #1a1a1a;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: 'Segoe
+UI', system-ui, -apple-system, sans-serif;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; min-height: 100vh;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; </p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .main-wrapper {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 900px; /*
+Aumentado para telas grandes */</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 40px 20px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .header {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg,
+#800080 0%, #4b0082 100%);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ffffff;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 60px 20px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 24px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 20px
+40px rgba(75, 0, 130, 0.15);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 40px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .titulo-empresa {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: clamp(32px,
+5vw, 48px);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 900;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; letter-spacing: -1px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-transform: uppercase;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .header p {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 15px 0 0;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 18px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; opacity: 0.9;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 300;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .subtitle {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 700;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 22px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #4b0082;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 30px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-transform: uppercase;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; letter-spacing: 1px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; /* Grid que se adapta: 1 coluna
+no celular, 3 colunas no PC */</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .grid-servicos {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns:
+repeat(auto-fit, minmax(250px, 1fr));</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 20px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 40px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .cartao {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background:
+#ffffff;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 20px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 30px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: 1px solid rgba(0,0,0,0.05);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 4px 6px
+rgba(0,0,0,0.02);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: all 0.3s
+ease;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-direction: column;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .cartao:hover {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transform: translateY(-10px);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 20px
+25px -5px rgba(0,0,0,0.1);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-color:
+#800080;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .cartao h3 {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #800080;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 15px 0;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 20px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .cartao p {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #4b5563;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 15px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.6;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .badge {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: inline-block;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color:
+#fce7f3;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #db2777;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 6px 12px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 10px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 11px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 800;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-self: flex-start;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .cta-container {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background:
+#ffffff;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 40px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 24px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 4px 6px
+rgba(0,0,0,0.02);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .botao {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: inline-block;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 400px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(90deg,
+#ff0080, #e60073);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #ffffff;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 18px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 800;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 18px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: none;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 10px
+20px rgba(255, 0, 128, 0.2);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: all 0.3s
+ease;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .botao:hover {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transform: scale(1.02);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 15px
+30px rgba(255, 0, 128, 0.3);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .footer {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 14px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #6b7280;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 50px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding-bottom: 40px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; /* Modal */</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; #modal {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: none;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: fixed;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 0; left: 0; width:
+100%; height: 100%;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: rgba(0,0,0,0.8);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; backdrop-filter: blur(8px);</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; z-index: 999;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; .modal-content {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 40px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 30px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 400px;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; animation: slideUp
+0.3s ease-out;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; @keyframes slideUp {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from { transform: translateY(50px);
+opacity: 0; }</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to { transform: translateY(0);
+opacity: 1; }</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;/style&gt;</p>
+
+<p class=MsoNormal>&lt;/head&gt;</p>
+
+<p class=MsoNormal>&lt;body&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;div class=&quot;main-wrapper&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;header class=&quot;header&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class=&quot;titulo-empresa&quot;&gt;CONECTA.TI&lt;/h1&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Sua ponte
+entre tecnologia e vendas reais.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/header&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;subtitle&quot;&gt;Proposta
+Estratégica: Pará Duo&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid-servicos&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;cartao&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;span class=&quot;badge&quot;&gt;SISTEMA ATIVO&lt;/span&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#129302;</span>
+Automação de Leads&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;p&gt;Fim do tempo de espera. Conectamos seus anúncios ao
+WhatsApp em milissegundos para garantir a venda.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;cartao&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;span class=&quot;badge&quot; style=&quot;background:#e0f2fe;
+color:#0369a1;&quot;&gt;DASHBOARD&lt;/span&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128200;</span>
+Gestão de Dados&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;p&gt;Decisões baseadas em números, não em achismos. Acompanhe
+seu ROI de qualquer lugar.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;cartao&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;span class=&quot;badge&quot; style=&quot;background:#f0fdf4;
+color:#166534;&quot;&gt;CONVERSÃO&lt;/span&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#127760;</span>
+Landing Pages&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &lt;p&gt;Websites que não são apenas bonitos, mas máquinas de
+conversão otimizadas para o Google.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;cta-container&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 style=&quot;margin-top:0&quot;&gt;Pronto
+para escalar seu negócio?&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p style=&quot;color:#6b7280;
+margin-bottom:25px&quot;&gt;Clique no botão abaixo para iniciar nosso
+atendimento VIP.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class=&quot;botao&quot;
+onclick=&quot;abrir()&quot;&gt;FALAR COM A CONECTA.TI&lt;/button&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;footer class=&quot;footer&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+style='font-family:"Segoe UI Emoji",sans-serif'>&#128205;</span> Castanhal,
+Pará&lt;br&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;strong&gt;Conecta.ti
+- 2024&lt;/strong&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/footer&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;!-- Modal --&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;div id=&quot;modal&quot; onclick=&quot;fechar()&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;modal-content&quot;
+onclick=&quot;event.stopPropagation()&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div style=&quot;font-size:
+50px; margin-bottom: 10px;&quot;&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128075;</span>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 style=&quot;color:
+#4b0082; margin-top: 0;&quot;&gt;Vamos Conversar!&lt;/h2&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p style=&quot;color:#4b5563&quot;&gt;Nossa
+equipe de Castanhal está pronta para te atender.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;hr style=&quot;border:0;
+border-top:1px solid #eee; margin:20px 0&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;WhatsApp
+Comercial:&lt;br&gt;&lt;strong style=&quot;font-size:20px; color:#ff0080;&quot;&gt;(91)
+9XXXX-XXXX&lt;/strong&gt;&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class=&quot;botao&quot;
+onclick=&quot;fechar()&quot; style=&quot;background: #1f2937; padding: 12px;
+margin-top: 20px; font-size:14px&quot;&gt;Voltar ao Portfólio&lt;/button&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;script&gt;</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; function abrir() {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById('modal').style.display
+= 'flex';</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; function fechar() {</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById('modal').style.display
+= 'none';</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+
+<p class=MsoNormal>&nbsp; &nbsp; &lt;/script&gt;</p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
